@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-sl4a",
+  "version": "1.0.0",
+  "description": "sl4a client for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leshy/nodejs-sl4a.git"
+  },
+  "author": "lesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leshy/nodejs-sl4a/issues"
+  },
+  "homepage": "https://github.com/leshy/nodejs-sl4a#readme"
+}
