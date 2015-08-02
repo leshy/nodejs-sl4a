@@ -14,9 +14,11 @@
     return exports.Android.prototype[method] = function(){
       var i$, params, callback;
       params = 0 < (i$ = arguments.length - 1) ? slice$.call(arguments, 0, i$) : (i$ = 0, []), callback = arguments[i$];
-      if (callback.constructor !== Function) {
-        params.push(callback);
-        callback = void 8;
+      if (callback != null) {
+        if (callback.constructor !== Function) {
+          params.push(callback);
+          callback = void 8;
+        }
       }
       return this.query(method, params, callback);
     };
