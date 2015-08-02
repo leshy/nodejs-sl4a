@@ -3,9 +3,11 @@
   var Android, a;
   Android = require('./index').Android;
   a = new Android('phone');
-  a.query('ttsSpeak', ['0'], function(data){
+  a.query('ttsSpeak', ['hello'], function(data){
     console.log(data);
-    return a.close();
+    return a.ttsSpeak('world', function(data){
+      console.log(data);
+      return a.close();
+    });
   });
-  a.ttsSpeak('0');
 }).call(this);
